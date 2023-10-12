@@ -1,0 +1,25 @@
+@mixin center{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ancoras{
+    width: 62%;
+    height:48px;
+    border-radius:5px;
+    font-size: 20px;
+    background-color:rgb(64, 64, 214);
+    color:  white;
+    text-transform: uppercase;
+    text-decoration:none;
+    text-align:center;
+    cursor: pointer;
+    padding-top:12px;
+
+    &:hover{
+        background-color:rgb(38, 38, 149);
+        color:  rgb(183, 178, 178);
+    }
+}

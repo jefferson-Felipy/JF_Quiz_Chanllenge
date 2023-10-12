@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, purple, blue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.article_open {
+  width: 45%;
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.article_open .container_welcome {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 4px 5px 7px #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.article_open .container_welcome .title {
+  width: 99%;
+  text-align: center;
+  margin: 25px;
+}
+.article_open .container_welcome .alert_error {
+  width: 95%;
+  text-align: center;
+  height: 42px;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  padding-top: 8px;
+}
+.article_open .container_welcome div {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+.article_open .container_welcome div input {
+  width: 95%;
+  height: 95%;
+  margin: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid silver;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.article_open .container_welcome div input:focus ~ label,
+.article_open .container_welcome div input:valid ~ label {
+  transform: translateY(-28px);
+  font-size: 20px;
+}
+.article_open .container_welcome div label {
+  position: absolute;
+  top: 16px;
+  left: 22px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+.article_open .container_welcome .label_select {
+  width: 95%;
+  display: block;
+  margin: 0px 18px;
+  font-size: 20px;
+}
+.article_open .container_welcome .label_select select {
+  padding: 7px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.article_open .container_welcome a {
+  width: 62%;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgb(64, 64, 214);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 12px;
+}
+.article_open .container_welcome a:hover {
+  background-color: rgb(38, 38, 149);
+  color: rgb(183, 178, 178);
+}
+
+.article_start {
+  width: 45%;
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.article_start div {
+  width: 80%;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+.article_start div p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.article_start .container_start {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 4px 5px 7px #000;
+}
+.article_start .container_start h3 {
+  text-align: center;
+  margin: 20px 10px;
+}
+.article_start .container_start .ancs {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.article_start .container_start .ancs a {
+  width: 62%;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgb(64, 64, 214);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 12px;
+  margin: 15px 10px;
+}
+.article_start .container_start .ancs a:hover {
+  background-color: rgb(38, 38, 149);
+  color: rgb(183, 178, 178);
+}
+
+.article_quiz {
+  width: 36%;
+  height: 70vh;
+  border-radius: 10px;
+  background-color: rgb(45, 25, 202);
+  box-shadow: 5px 6px 8px #000;
+}
+.article_quiz .menu {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(45, 25, 202);
+}
+.article_quiz .campo_text {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-size: 21px;
+  background-color: rgb(42, 13, 104);
+  color: white;
+  letter-spacing: 1px;
+  padding: 28px;
+  margin-bottom: 14px;
+}
+.article_quiz .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.article_quiz .buttons #btns {
+  width: 98%;
+  height: 48px;
+  border-radius: 4px;
+  border: 2.5px solid white;
+  font-size: 18px;
+  background-color: rgb(42, 13, 104);
+  color: white;
+  margin: 6px;
+  text-align: left;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.article_quiz .buttons #btns:hover {
+  background-color: rgb(45, 25, 202);
+}
+.article_quiz .buttons #btns .p_letters {
+  color: rgb(131, 182, 20);
+  font-weight: bold;
+}
+.article_quiz .buttons .btn_A, .article_quiz .buttons .btn_B, .article_quiz .buttons .btn_C, .article_quiz .buttons .btn_D {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
