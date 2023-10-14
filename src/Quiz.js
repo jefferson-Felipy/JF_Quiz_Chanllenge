@@ -38,6 +38,7 @@ class Quiz{
         this.list_letters = ["A","B","C","D"];
         this.list_options = [...categorias[this.randon].opcoes];
         list_numbers.push(this.randon);
+        btn_next.style.opacity = '0';
     }
 
     Insert_txt = () => {
@@ -61,7 +62,6 @@ class Quiz{
                 this.Select_option(button.textContent,categorias[this.randon].resposta,button);
                 //Formatando o botao que for clicado_
                 button.style.backgroundColor = '#FFD700';
-                next_valid = true;
                 this.Start_Cronometry();
             });
             //Inserindo os botoes dentro do elemento que eu quero que eles fiquem_
@@ -75,6 +75,8 @@ class Quiz{
         //Exibe a opção correta após 3 segundos_
         this.interval = setTimeout(() => {
             this.Stop_Cronometry();
+            next_valid = true;
+            btn_next.style.opacity = '1';
 
             if(value == res) button.style.backgroundColor = '#32CD32';
             else{
@@ -96,7 +98,7 @@ class Quiz{
         cronometry.textContent = '';
         this.interval = setInterval(() => {
             segundos++;
-            cronometry.textContent = `0${segundos}`;
+            cronometry.textContent = `00:0${segundos}`;
         },900);
     }
 
