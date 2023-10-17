@@ -1,3 +1,5 @@
+"use strict";
+
 const p_nome = document.querySelector('#p_nome');
 const p_categoria = document.querySelector('#categoria');
 const start_quiz = document.querySelector('#start_quiz');
