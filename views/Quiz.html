@@ -11,8 +11,27 @@
 
     <article class="article_quiz">
 
+        <div id="hide"></div>
+        <!--Em caso de erro na escolha da opção correta, irá exibir, por meio do js, esse model_-->
+        <section id="Error_field">
+            <h2>Voce errou!</h2>
+            <h4 id="right_answer">Resposta correta: </h4>
+            <div>
+                <a href="">Ver Justificativa</a>
+                <a href="">Voltar as opções</a>
+                <a href="">Reiniciar</a>
+            </div>
+        </section>
+    <!--Esse model irá exibir a justificativa daquela oção correta_-->
+    <!-- <section class="Justify_error" id="Justify_error"></section> -->
+
         <section class="menu">
-            <p class="p_categoria" id="p_cat"></p>
+            <p class="p_categoria" id="p_cat">
+            <div >
+                <img src="../public/images/moeda.png" alt="">
+                <p id="p_points" class="points">0</p>
+            </div>
+            </p>
             <span class="contador" id="cronometry"></span>
         </section>
 
