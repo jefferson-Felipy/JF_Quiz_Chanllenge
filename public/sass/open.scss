@@ -80,3 +80,15 @@
         }
     }
 }
+
+//MediaQuery_
+@media(max-width:650px){
+    .article_open{
+        width: 100%;
+    }
+}
+@media(min-height:650){
+    .article_open{
+        height:70vh;
+    }
+}

@@ -114,3 +114,20 @@
         }
     }
 }
+
+//MediaQuery_
+@media(max-width:1000px){
+    .article_quiz{
+        width: 54%;
+    }
+}
+@media(max-width:620px){
+    .article_quiz{
+        width: 100%;
+    }
+}
+@media(min-height: 800px){
+    .article_quiz{
+        height:60%;
+    }
+}
