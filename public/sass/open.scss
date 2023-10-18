@@ -81,6 +81,20 @@
     }
 }
 
+footer{
+    width:45%;
+    height:30px;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    margin:20px;
+
+    p{
+        display:inline;
+    }
+
+}
+
 //MediaQuery_
 @media(max-width:650px){
     .article_open{
